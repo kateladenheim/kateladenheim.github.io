@@ -1,0 +1,250 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.container {
+	width: 100%;
+	height: 100%
+	margin: 0 auto;
+}
+
+header h1 {
+	font-size: 5vw;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: left;
+    float: left;
+    margin-top: 24vw;
+    padding-left: 1vw;
+}
+
+header img {
+	padding-top: 7vw;
+	padding-left: 0px; 
+	width: 60%;
+	float: left;
+}
+
+nav {
+	position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 4vw;
+    transform-origin: 100% 50%;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  padding: 15px;
+}
+
+nav a {
+  font-size: 20px;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+	color: #ba0913;
+}
+
+hr {
+	margin-right: 17.5vw;
+	margin-left: 17.5vw;
+}
+
+#vision-text {
+	margin-left: 17.5vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    width: 42vw;
+    text-align: left;
+    font-size: 22px;
+}
+
+#vision img {
+	margin: 0;
+	float: right;
+	width: 68%;
+	padding-bottom: 50px;
+}
+
+#work {
+	padding-top: 50px;
+}
+
+.activity {
+	padding-bottom: 12vw;
+}
+
+.rectangle {
+    border-width: 4px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 246px;
+    height: 246px;
+    content: ".";
+    position: absolute;
+    display: inline-block;
+    float: left;
+    left: 10vw;
+    z-index: -1;
+}
+
+.workImg {
+	position: relative;
+    float: left;
+    left: 14vw;
+    top: 4vw;
+}
+
+.activity h2 {
+	display: inline-block;
+    float: left;
+    margin-top: 0;
+    margin-left: 18vw;
+}
+
+.activity p {
+	display: inline-block;
+    margin-left: 25vw;
+    width: 40vw;
+}
+
+#prodRec {
+    border-width: 4px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 246px;
+    height: 246px;
+    content: ".";
+    position: absolute;
+    display: inline-block;
+    float: right;
+    right: 10vw;
+    z-index: -1;
+}
+
+#prodImg {
+	position: relative;
+    float: right;
+    right: 14vw;
+    top: 4vw;
+}
+
+#production h2 {
+	display: inline;
+    float: right;
+    margin-top: 0;
+    margin-right: 17vw;
+}
+
+#production p {
+	display: inline-block;
+    margin-left: 15vw;
+    width: 40vw;
+}
+
+#upcoming-image h1 {
+	float: right;
+	transform-origin: 75% 50%;
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#upcoming-image {
+	overflow: auto;
+    display: inline;
+}
+
+#upcoming img {
+	float: right;
+    display: inline-block;
+    width: 77vw;
+}
+
+.upcoming-info {
+	margin-left: 23vw;
+    width: 60vw;
+    text-align: left;
+    padding: 1vw;
+}
+
+#click-details p {
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+footer ul {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+footer li {
+	display: inline-block;
+	padding: 15px;
+}
+
+
+/******************* BEGIN MEDIA QUERIES ******************/ 
+
+@media screen and (max-width: 1024px) {
+	nav {
+		display: none;
+	}
+}
+
+/*
+
+width: 100%;
+max-width: ***px;
+box-sizing: border-box;
+
+USE TRANSITION PROPERTY TO PAD MEDIA QUERIES** NOT ANIMATIONS
+
+*/
