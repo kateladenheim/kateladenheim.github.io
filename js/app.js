@@ -1,9 +1,10 @@
 $(document).ready(function () {
+	
 	// console.logs the window.width
 	$(window).resize(function () {
 		console.log($(window).width());
 		if ($(window).width() >= 1024) {
-			$('#mobile-nav').hide();
+			$('#mobile-nav').hide(); 
 		}
 	});
 

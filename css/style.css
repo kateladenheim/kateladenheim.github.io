@@ -27,18 +27,20 @@ header h1 {
     font-weight: 600;
     text-align: left;
     float: left;
-    margin-top: 24vw;
+    margin-top: 30vw;
     padding-left: 1vw;
 }
 
 header img {
-	padding-top: 7vw;
+	padding-top: 10vw;
 	padding-left: 0px; 
-	width: 60%;
+	width: 65%;
 	float: left;
 }
 
-nav {
+/*************** NAV ***************/
+
+#desktop-nav {
 	position: fixed;
     right: 0;
     top: 0;
@@ -56,34 +58,76 @@ nav {
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-nav ul {
+#desktop-nav ul {
   list-style-type: none;
 }
 
-nav li{
+#desktop-nav li {
   display: inline-block;
   padding: 15px;
 }
 
-nav a {
+#desktop-nav a {
   font-size: 20px;
   text-transform: lowercase;
   text-decoration: none;
   color: black;
 }
 
-nav a:hover {
+#desktop-nav a:hover {
 	color: #ba0913;
 }
+
+/*************** MOBILE NAV ***************/
+
+#mobile-nav {
+	display: none;
+}
+
+#mobile-nav ul {
+	list-style-type: none;
+}
+
+#mobile-nav li {
+	text-align: right;
+	display: block;
+	padding: 15px;
+}
+
+#mobile-nav a {
+	font-size: 20px;
+	text-transform: lowercase;
+	text-decoration: none;
+	color: black;
+}
+
+#mobile-nav a:hover {
+	color: #ba0913;
+}
+
+#burger {
+	display: none;
+	float: right;
+	margin: 20px 20px 0 0;
+}
+
+.line {
+	border: 1px solid black;
+	width: 25px;
+	margin-top: 5px;
+}
+
 
 hr {
 	margin-right: 17.5vw;
 	margin-left: 17.5vw;
 }
 
+
+
 #vision-text {
 	margin-left: 17.5vw;
-    margin-top: 3vw;
+    margin-top: 10vw;
     margin-bottom: 5vw;
     width: 42vw;
     text-align: left;
@@ -122,6 +166,7 @@ hr {
 
 .workImg {
 	position: relative;
+	width: 250px;
     float: left;
     left: 14vw;
     top: 4vw;
@@ -131,12 +176,12 @@ hr {
 	display: inline-block;
     float: left;
     margin-top: 0;
-    margin-left: 18vw;
+    margin-left: 16vw;
 }
 
 .activity p {
 	display: inline-block;
-    margin-left: 25vw;
+    margin-left: 20vw;
     width: 40vw;
 }
 
@@ -157,6 +202,7 @@ hr {
 
 #prodImg {
 	position: relative;
+	width: 250px;
     float: right;
     right: 14vw;
     top: 4vw;
@@ -166,12 +212,12 @@ hr {
 	display: inline;
     float: right;
     margin-top: 0;
-    margin-right: 17vw;
+    margin-right: 15vw;
 }
 
 #production p {
 	display: inline-block;
-    margin-left: 15vw;
+    margin-left: 13vw;
     width: 40vw;
 }
 
@@ -213,14 +259,18 @@ hr {
 	padding-bottom: 10px;
 }
 
+.icon {
+	height: 25px;
+}
+
 footer {
 	text-align: center;
 	font-size: 12px;
 	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 
 footer ul {
-	text-decoration: none;
 	list-style-type: none;
 	padding: 0;
 }
@@ -228,16 +278,28 @@ footer ul {
 footer li {
 	display: inline-block;
 	padding: 15px;
+	text-decoration: none;
 }
 
 
 /******************* BEGIN MEDIA QUERIES ******************/ 
 
 @media screen and (max-width: 1024px) {
-	nav {
+
+	#burger {
+		display: block;
+	}
+
+	#desktop-nav {
 		display: none;
 	}
+
+	#mobile-nav {
+		display: block;
+	}
 }
+
+
 
 /*
 
