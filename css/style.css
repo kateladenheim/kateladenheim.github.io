@@ -21,6 +21,10 @@ body {
 	margin: 0 auto;
 }
 
+#mobile-h1 {
+	display: none;
+}
+
 header h1 {
 	font-size: 5vw;
     line-height: 1em;
@@ -45,6 +49,7 @@ header img {
     right: 0;
     top: 0;
     margin-right: 4vw;
+    margin-top: 4vw;
     transform-origin: 100% 50%;
 	/* Safari */
 	-webkit-transform: rotate(-90deg);
@@ -126,7 +131,7 @@ hr {
 
 
 #vision-text {
-	margin-left: 17.5vw;
+	margin-left: 10vw;
     margin-top: 10vw;
     margin-bottom: 5vw;
     width: 42vw;
@@ -260,7 +265,7 @@ hr {
 }
 
 .icon {
-	height: 25px;
+	height: 30px;
 }
 
 footer {
@@ -270,6 +275,11 @@ footer {
 	margin-bottom: 25px;
 }
 
+footer hr {
+	width: 70%;
+	margin: 0 auto;
+}
+
 footer ul {
 	list-style-type: none;
 	padding: 0;
@@ -277,8 +287,9 @@ footer ul {
 
 footer li {
 	display: inline-block;
-	padding: 15px;
-	text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
 }
 
 
@@ -297,6 +308,96 @@ footer li {
 	#mobile-nav {
 		display: block;
 	}
+}
+
+@media screen and (max-width: 850px) {
+
+	#desktop-h1 {
+		display: none;
+	}
+
+	#mobile-h1 {
+		display: block;
+		margin-top: 2vw;
+	}
+
+	header img {
+		padding-top: 0;
+		width: 75%;
+	}
+
+	#vision-text {
+		margin-left: 15vw;
+		margin-right: 15vw;
+		width: 70vw;
+	}
+
+	#vision img {
+		width: 85%;
+	}
+
+	.image-rectangle {
+		height: 75vw;
+	}
+
+	.workImg {
+		width: 60vw;
+    	left: 25vw;
+    	top: 10vw;
+	}
+
+	.rectangle {
+		width: 60vw;
+    	height: 60vw;
+    	left: 15vw;
+	}
+
+	.activity h2 {
+		display: block;
+		margin-left: 15vw;
+		float: none;
+	}
+	
+	.activity p {
+		display: block;
+		margin-left: 15vw;
+		width: 70vw;
+		float: none;
+	}
+
+	#prodImg {
+		width: 60vw;
+    	left: 25vw;
+    	top: 10vw;
+    	float: none;
+	}
+
+	#prodRec {
+		width: 60vw;
+    	height: 60vw;
+    	left: 15vw;
+	}
+
+	#production h2 {
+		display: block;
+		margin-left: 15vw;
+		float: none;
+	}
+	
+	#production p {
+		display: block;
+		margin-left: 15vw;
+		width: 70vw;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 515px) {
+	#upcoming img {
+    width: 70vw;
+}
+
 }
 
 
