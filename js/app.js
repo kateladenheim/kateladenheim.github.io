@@ -14,13 +14,15 @@ $(document).ready(function () {
 		}
 	});
 
-$('#burger').click(function () {
-	$('#mobile-nav').slideToggle();
-});
+	$('#burger').click(function () {
+		$('#mobile-nav').slideToggle();
+	});
 
+	$('#desktop-h1').addClass('animated fadeInLeft');
+	$('#landing-img').addClass('animated fadeInUp');
 
-$(#'desktop-h1').load(function () {
-	$('#desktop-h1').addClass('fadeInUp');
-});
-	
+	$(window).scroll(function(){
+		$('desktop-h1').addClass('animated fadeOutUp');
+		$('landing-img').addClass('animated fadeOutLeft');
+	});
 });
