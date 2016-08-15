@@ -21,8 +21,8 @@ $(document).ready(function () {
 	$('#desktop-h1').addClass('animated fadeInLeft');
 	$('#landing-img').addClass('animated fadeInUp');
 
-	$(window).scroll(function(){
+	/* $(window).scroll(function(){
 		$('desktop-h1').addClass('animated fadeOutUp');
 		$('landing-img').addClass('animated fadeOutLeft');
-	});
+	}); */
 });
